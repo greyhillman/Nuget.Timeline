@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>false</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Timeline.JSON</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Grey</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Timeline/Timeline.csproj" />
+  </ItemGroup>
+
+</Project>
