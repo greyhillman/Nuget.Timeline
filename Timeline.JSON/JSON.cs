@@ -30,7 +30,7 @@ namespace Timeline.JSON
                 binder: null,
                 args: new object[] { options },
                 culture: null)!;
-            
+
             return converter;
         }
     }
@@ -70,7 +70,7 @@ namespace Timeline.JSON
                     throw new JsonException();
                 }
 
-                timeline[time] = @event;
+                timeline.Add(time, @event);
             }
 
             return timeline;
@@ -86,7 +86,12 @@ namespace Timeline.JSON
             foreach (var entry in value)
             {
                 _timeConverter.WriteAsPropertyName(writer, entry.Time, options);
-                _eventConverter.Write(writer, entry.Event, options);
+                writer.WriteStartArray();
+                foreach (var @event in entry.Events)
+                {
+                    _eventConverter.Write(writer, @event, options);
+                }
+                writer.WriteEndArray();
             }
 
             writer.WriteEndObject();

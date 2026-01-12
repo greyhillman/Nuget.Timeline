@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timeline", "Timeline\Timeli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timeline.JSON", "Timeline.JSON\Timeline.JSON.csproj", "{73C297C1-2C4C-4B5D-980A-74D90C1BBF12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timeline.Test", "Timeline.Test\Timeline.Test.csproj", "{2D5F2203-A9A7-4AF7-9760-5B6D9E994BB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{73C297C1-2C4C-4B5D-980A-74D90C1BBF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73C297C1-2C4C-4B5D-980A-74D90C1BBF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73C297C1-2C4C-4B5D-980A-74D90C1BBF12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D5F2203-A9A7-4AF7-9760-5B6D9E994BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D5F2203-A9A7-4AF7-9760-5B6D9E994BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D5F2203-A9A7-4AF7-9760-5B6D9E994BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D5F2203-A9A7-4AF7-9760-5B6D9E994BB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
